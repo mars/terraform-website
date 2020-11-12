@@ -165,7 +165,7 @@ Key path                                   | Type    | Default   | Description
 `data.attributes.session-timeout`          | integer |    20160  | Session timeout after inactivity (minutes)
 `data.attributes.session-remember`         | integer |    20160  | Session expiration (minutes)
 `data.attributes.collaborator-auth-policy` | string  | password  | Authentication policy (`password` or `two_factor_mandatory`)
-`data.attributes.cost-estimation-enabled`  | boolean | false     | Whether or not the cost estimation feature is enabled for all workspaces in the organization
+`data.attributes.cost-estimation-enabled`  | boolean | true      | Whether or not the cost estimation feature is enabled for all workspaces in the organization. Defaults to true on Terraform Cloud when the organization is on the Teams & Governance tier (else, the value is false and cannot be changed) and always true on Terraform Enterprise.
 `data.attributes.owners-team-saml-role-id` | string  | (nothing) | **Optional.** **SAML only** The name of the ["owners" team](/docs/enterprise/saml/team-membership.html#managing-membership-of-the-owners-team)
 
 ### Sample Payload
@@ -255,7 +255,7 @@ Key path                                   | Type    | Default   | Description
 `data.attributes.session-timeout`          | integer |    20160  | Session timeout after inactivity (minutes)
 `data.attributes.session-remember`         | integer |    20160  | Session expiration (minutes)
 `data.attributes.collaborator-auth-policy` | string  | password  | Authentication policy (`password` or `two_factor_mandatory`)
-`data.attributes.cost-estimation-enabled`  | boolean | false     | Whether or not the cost estimation feature is enabled for all workspaces in the organization
+`data.attributes.cost-estimation-enabled`  | boolean | true      | Whether or not the cost estimation feature is enabled for all workspaces in the organization. Defaults to true on Terraform Cloud when the organization is on the Teams & Governance tier (else, the value is false and cannot be changed) and always true on Terraform Enterprise.
 `data.attributes.owners-team-saml-role-id` | string  | (nothing) | **Optional.** **SAML only** The name of the ["owners" team](/docs/enterprise/saml/team-membership.html#managing-membership-of-the-owners-team)
 
 ### Sample Payload
